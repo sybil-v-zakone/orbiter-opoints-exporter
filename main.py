@@ -76,6 +76,9 @@ def main():
     logger.info('All wallets fetched. Running export to excel')
     export_json(result, EXCEL_EXPORT_PATH)
 
+    logger.info('Shutting down...')
+    exit()
+
 
 if __name__ == "__main__":
     main()
